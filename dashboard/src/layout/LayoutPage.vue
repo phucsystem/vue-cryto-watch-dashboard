@@ -4,7 +4,7 @@
             <button class="back-btn" v-if="currentPage === 'infoview'" @click="$router.push({ path: '/' })">
                 <i class="fa fa-angle-left fa-2x"></i>
             </button>
-            <span class="page-title">BINANCE CRYPTO DASHBOARD</span>
+            <span class="page-title">CRYPTO WATCH DASHBOARD</span>
         </header>
         <div class="page-container">
             <transition name="fade" mode="out-in">
