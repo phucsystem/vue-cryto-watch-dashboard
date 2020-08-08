@@ -1,5 +1,5 @@
 # Crypto Watch Dashboard
-Demo: www.phucsystem.github.io/crypto-watch
+Demo: https://phucsystem.github.io/crypto-watch/
 
 ## Project setup
 ```
