@@ -45,7 +45,7 @@ export default class Api {
                     }
 
                     if(jsonData.marketUpdate){
-                        console.log(marketUpdate);
+                        console.log(jsonData.marketUpdate);
                         const currency = defaultPair.find(x => x.currencyPairId == jsonData.marketUpdate.market.currencyPairId);
                         jsonData['symbol'] = currency.symbol;
                         cb(jsonData);
