@@ -13,7 +13,6 @@ export default class Api {
     }
 
     subscribe(cb, options) {
-        console.log(defaultPair);
         let ws;
         try {
             let path = this._baseUrl;
@@ -29,6 +28,7 @@ export default class Api {
                     var enc = new TextDecoder("utf-8");
                     var arr = new Int8Array(e.data);
                     var jsonData = JSON.parse(enc.decode(arr));
+                    console.log(jsonData);
                     if (jsonData.authenticationResult && jsonData.authenticationResult.status === 'AUTHENTICATED') {
                         const subscribe = function (conn, resources) {
                             conn.send(JSON.stringify({
@@ -44,9 +44,8 @@ export default class Api {
                         return
                     }
 
-                    console.log(jsonData);
-
                     if(jsonData.marketUpdate){
+                        console.log(marketUpdate);
                         const currency = defaultPair.find(x => x.currencyPairId == jsonData.marketUpdate.market.currencyPairId);
                         jsonData['symbol'] = currency.symbol;
                         cb(jsonData);
