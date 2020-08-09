@@ -42,11 +42,11 @@
     "currencyPairId": 17
   },
   {
-    "base": "COMP",
+    "base": "BNB",
     "quote": "USDT",
-    "resource": "instruments:176412:trades",
-    "symbol": "COMPUSDT",
-    "currencyPairId": 176412
+    "resource": "instruments:1217:trades",
+    "symbol": "BNBUSDT",
+    "currencyPairId": 1217
   },
   {
     "base": "NEO",
